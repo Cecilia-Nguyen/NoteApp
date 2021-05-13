@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EditNoteActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:background="@drawable/default_borrder_bg"
+        android:backgroundTint="@color/purple_200"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/et_update_note"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Enter your note here"
+        android:textColor="@color/purple_200"
+        android:gravity="start|top"
+        android:textColorHint="@color/black"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/default_borrder_bg"
+        ></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Update"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:onClick="onClickUpdate"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Delete"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="onClickDelete"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

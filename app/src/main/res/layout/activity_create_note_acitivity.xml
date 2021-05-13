@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CreateNoteActivity">
+    <EditText
+        android:id="@+id/et_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter your title here"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:background="@drawable/default_borrder_bg"
+        android:backgroundTint="@color/purple_200"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Enter your note here"
+        android:textColor="@color/purple_200"
+        android:gravity="start|top"
+        android:textColorHint="@color/black"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/default_borrder_bg"
+        ></EditText>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="Save"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="onClickSave"/>
+
+
+
+</LinearLayout>
