@@ -50,7 +50,7 @@ public class EditNoteActivity extends AppCompatActivity {
             boolean done = db.updateNote(updated_note);
 
             if (done == true) {
-                Intent intent=new Intent(EditNoteActivity.this,MainActivity.class);
+                Intent intent=new Intent(EditNoteActivity.this,ShowNoteActivity.class);
                 startActivity(intent);
             }
         }
@@ -59,7 +59,7 @@ public class EditNoteActivity extends AppCompatActivity {
 
     public void onClickDelete(View view){
         db.deleteNote(note);
-        Intent intent=new Intent(EditNoteActivity.this,MainActivity.class);
+        Intent intent=new Intent(EditNoteActivity.this,ShowNoteActivity.class);
         startActivity(intent);
     }
 }
